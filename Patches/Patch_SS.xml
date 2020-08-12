@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Social Supplements</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="SSMintTea_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSMintTea_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Indigestion</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSMintTea_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Indigestion</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="SSVape_Regular_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSVape_Regular_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Restless</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSVape_Regular_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Restless</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="SSVape_Fruity_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSVape_Fruity_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Restless</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSVape_Fruity_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Restless</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="SSVape_Menthol_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSVape_Menthol_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Restless</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSVape_Menthol_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Restless</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="SSBlitz_Zest_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSBlitz_Zest_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSBlitz_Zest_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="SSBlitz_Ice_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSBlitz_Ice_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSBlitz_Ice_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="SSPowerBarHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSPowerBarHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SSPowerBarHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

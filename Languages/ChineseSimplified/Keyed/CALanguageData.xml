@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Settings -->
+  <ComAil.Name>别来无恙</ComAil.Name>
+  <ComAil.DoAilments>允许小病:</ComAil.DoAilments>
+  <ComAil.CAStartDays>多少游戏天后小病开始出现[默认 60]:</ComAil.CAStartDays>
+  <ComAil.CAFrequency>检测小病的频率（游戏中小时）[默认 24]:</ComAil.CAFrequency>
+  <ComAil.CAChance>得小病的基础概率 % [默认 10]:</ComAil.CAChance>
+  <ComAil.DoSTI>允许性传播疾病 (STIs):</ComAil.DoSTI>
+  <ComAil.CASTIOffset>性传播疾病补偿值(负数越小则几率越低): [默认 -50]:</ComAil.CASTIOffset>
+  <ComAil.CanAddScenario>允许该模组内容被加入预设情境中:</ComAil.CanAddScenario>
+  <ComAil.ChangeValueTip>(这一改动将会在游戏重启后生效)</ComAil.ChangeValueTip>
+  <!-- Content -->
+  <ComAil.Confirmation> 得了一种常见的疾病 </ComAil.Confirmation>
+  <ComAil.CureMsg>{0}'的{1} 已经被治愈.</ComAil.CureMsg>
+</LanguageData>

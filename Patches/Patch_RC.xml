@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RimCuisine 1.0</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="ZopeHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="ZopeHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="ZopeHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="DreamstickHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="DreamstickHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="DreamstickHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="SkagHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SkagHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="SkagHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="VikoHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="VikoHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="VikoHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

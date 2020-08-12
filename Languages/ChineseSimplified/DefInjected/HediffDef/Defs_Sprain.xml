@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CA_Sprain_Hand.label>扭伤(手部)</CA_Sprain_Hand.label>
+  <CA_Sprain_Hand.stages.0.label>恢复中</CA_Sprain_Hand.stages.0.label>
+  <CA_Sprain_Hand.labelNoun>扭伤</CA_Sprain_Hand.labelNoun>
+  <CA_Sprain_Arm.label>扭伤(胳膊)</CA_Sprain_Arm.label>
+  <CA_Sprain_Arm.stages.0.label>恢复中</CA_Sprain_Arm.stages.0.label>
+  <CA_Sprain_Arm.labelNoun>扭伤</CA_Sprain_Arm.labelNoun>
+  <CA_Sprain_Foot.label>扭伤(足部)</CA_Sprain_Foot.label>
+  <CA_Sprain_Foot.stages.0.label>恢复中</CA_Sprain_Foot.stages.0.label>
+  <CA_Sprain_Foot.labelNoun>扭伤</CA_Sprain_Foot.labelNoun>
+  <CA_Sprain_Leg.label>扭伤(腿部)</CA_Sprain_Leg.label>
+  <CA_Sprain_Leg.stages.0.label>恢复中</CA_Sprain_Leg.stages.0.label>
+  <CA_Sprain_Leg.labelNoun>扭伤</CA_Sprain_Leg.labelNoun>
+</LanguageData>

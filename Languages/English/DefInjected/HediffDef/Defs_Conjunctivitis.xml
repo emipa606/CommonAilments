@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CA_Conjunctivitis.label>Conjunctivitis</CA_Conjunctivitis.label>
+  <CA_Conjunctivitis.description>Conjunctivitis</CA_Conjunctivitis.description>
+  <CA_Conjunctivitis.stages.0.label>mild</CA_Conjunctivitis.stages.0.label>
+  <CA_Conjunctivitis.stages.1.label>minor</CA_Conjunctivitis.stages.1.label>
+  <CA_Conjunctivitis.stages.2.label>major</CA_Conjunctivitis.stages.2.label>
+
+
+</LanguageData>

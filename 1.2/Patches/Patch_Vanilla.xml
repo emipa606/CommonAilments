@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName="PenoxycylineHigh"]/stages//makeImmuneTo</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="PenoxycylineHigh"]/stages//makeImmuneTo</xpath>
+          <value>
+            <li>CA_SoreThroat</li>
+            <li>CA_SkinRash</li>
+            <li>CA_Conjunctivitis</li>
+            <li>CA_Minor_STD</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="PenoxycylineHigh"]/stages/li</xpath>
+          <value>
+            <makeImmuneTo>
+              <li>CA_SoreThroat</li>
+              <li>CA_SkinRash</li>
+              <li>CA_Conjunctivitis</li>
+              <li>CA_Minor_STD</li>
+            </makeImmuneTo>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName="LuciferiumHigh"]/stages//makeImmuneTo</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="LuciferiumHigh"]/stages//makeImmuneTo</xpath>
+          <value>
+            <li>CA_Headache</li>
+            <li>CA_Migraine</li>
+            <li>CA_Earache</li>
+            <li>CA_Sinusitis</li>
+            <li>CA_CommonCold</li>
+            <li>CA_SoreThroat</li>
+            <li>CA_SkinRash</li>
+            <li>CA_Conjunctivitis</li>
+            <li>CA_Minor_STD</li>
+            <li>CA_PhantomPain</li>
+            <li>CA_Fatigue</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="LuciferiumHigh"]/stages/li</xpath>
+          <value>
+            <makeImmuneTo>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_Earache</li>
+              <li>CA_Sinusitis</li>
+              <li>CA_CommonCold</li>
+              <li>CA_SoreThroat</li>
+              <li>CA_SkinRash</li>
+              <li>CA_Conjunctivitis</li>
+              <li>CA_Minor_STD</li>
+              <li>CA_PhantomPain</li>
+              <li>CA_Fatigue</li>
+            </makeImmuneTo>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName="SmokeleafHigh"]/stages//makeImmuneTo</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="SmokeleafHigh"]/stages//makeImmuneTo</xpath>
+          <value>
+            <li>CA_Headache</li>
+            <li>CA_Restless</li>
+            <li>CA_PhantomPain</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="SmokeleafHigh"]/stages/li</xpath>
+          <value>
+            <makeImmuneTo>
+              <li>CA_Headache</li>
+              <li>CA_Restless</li>
+              <li>CA_PhantomPain</li>
+            </makeImmuneTo>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName="WakeUpHigh"]/stages//makeImmuneTo</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="WakeUpHigh"]/stages//makeImmuneTo</xpath>
+          <value>
+            <li>CA_Fatigue</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="WakeUpHigh"]/stages/li</xpath>
+          <value>
+            <makeImmuneTo>
+              <li>CA_Fatigue</li>
+            </makeImmuneTo>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName="GoJuiceHigh"]/stages//makeImmuneTo</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="GoJuiceHigh"]/stages//makeImmuneTo</xpath>
+          <value>
+            <li>CA_Fatigue</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName="GoJuiceHigh"]/stages/li</xpath>
+          <value>
+            <makeImmuneTo>
+              <li>CA_Fatigue</li>
+            </makeImmuneTo>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

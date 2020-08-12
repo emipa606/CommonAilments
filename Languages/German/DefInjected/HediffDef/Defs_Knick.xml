@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CA_Knick_Hand.label>Umgeknickt (Hand)</CA_Knick_Hand.label>
+  <CA_Knick_Hand.stages.0.label>Erholen</CA_Knick_Hand.stages.0.label>
+  <CA_Knick_Hand.labelNoun>Umgeknickt</CA_Knick_Hand.labelNoun>
+  <CA_Knick_Arm.label>Umgeknickt(Arm)</CA_Knick_Arm.label>
+  <CA_Knick_Arm.stages.0.label>Erholen</CA_Knick_Arm.stages.0.label>
+  <CA_Knick_Arm.labelNoun>Umgeknickt</CA_Knick_Arm.labelNoun>
+  <CA_Knick_Foot.label>Umgeknickt (Fuß)</CA_Knick_Foot.label>
+  <CA_Knick_Foot.stages.0.label>Erholen</CA_Knick_Foot.stages.0.label>
+  <CA_Knick_Foot.labelNoun>Umgeknickt</CA_Knick_Foot.labelNoun>
+  <CA_Knick_Leg.label>Umgeknickt (Bein)</CA_Knick_Leg.label>
+  <CA_Knick_Leg.stages.0.label>Erholen</CA_Knick_Leg.stages.0.label>
+  <CA_Knick_Leg.labelNoun>Umgeknickt</CA_Knick_Leg.labelNoun>
+</LanguageData>

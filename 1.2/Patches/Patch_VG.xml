@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>VGP Garden Medicine</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="Antibiotics"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="Antibiotics"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_SoreThroat</li>
+              <li>CA_SkinRash</li>
+              <li>CA_Conjunctivitis</li>
+              <li>CA_Minor_STD</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="Antibiotics"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_SoreThroat</li>
+                <li>CA_SkinRash</li>
+                <li>CA_Conjunctivitis</li>
+                <li>CA_Minor_STD</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="FluEzHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="FluEzHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_CommonCold</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="FluEzHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_CommonCold</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="IbuprofenHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="IbuprofenHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="IbuprofenHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="Caffeine"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="Caffeine"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="Caffeine"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

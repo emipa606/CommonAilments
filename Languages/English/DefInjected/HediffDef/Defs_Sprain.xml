@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CA_Sprain_Hand.label>sprain (hand)</CA_Sprain_Hand.label>
+  <CA_Sprain_Hand.description>Sprain</CA_Sprain_Hand.description>
+  <CA_Sprain_Hand.stages.0.label>Recovering</CA_Sprain_Hand.stages.0.label>
+  <CA_Sprain_Hand.labelNoun>a sprain</CA_Sprain_Hand.labelNoun>
+
+  <CA_Sprain_Arm.label>sprain (arm)</CA_Sprain_Arm.label>
+  <CA_Sprain_Arm.description>Sprain</CA_Sprain_Arm.description>
+  <CA_Sprain_Arm.stages.0.label>Recovering</CA_Sprain_Arm.stages.0.label>
+  <CA_Sprain_Arm.labelNoun>a sprain</CA_Sprain_Arm.labelNoun>
+
+  <CA_Sprain_Foot.label>sprain (foot)</CA_Sprain_Foot.label>
+  <CA_Sprain_Foot.description>Sprain</CA_Sprain_Foot.description>
+  <CA_Sprain_Foot.stages.0.label>Recovering</CA_Sprain_Foot.stages.0.label>
+  <CA_Sprain_Foot.labelNoun>a sprain</CA_Sprain_Foot.labelNoun>
+
+  <CA_Sprain_Leg.label>sprain (leg)</CA_Sprain_Leg.label>
+  <CA_Sprain_Leg.description>Sprain</CA_Sprain_Leg.description>
+  <CA_Sprain_Leg.stages.0.label>Recovering</CA_Sprain_Leg.stages.0.label>
+  <CA_Sprain_Leg.labelNoun>a sprain</CA_Sprain_Leg.labelNoun>
+
+
+</LanguageData>

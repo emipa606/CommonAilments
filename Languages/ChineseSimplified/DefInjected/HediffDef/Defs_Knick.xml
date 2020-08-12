@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CA_Knick_Hand.label>小割伤(手部)</CA_Knick_Hand.label>
+  <CA_Knick_Hand.stages.0.label>恢复中</CA_Knick_Hand.stages.0.label>
+  <CA_Knick_Hand.labelNoun>小割伤</CA_Knick_Hand.labelNoun>
+  <CA_Knick_Arm.label>小割伤(胳膊)</CA_Knick_Arm.label>
+  <CA_Knick_Arm.stages.0.label>恢复中</CA_Knick_Arm.stages.0.label>
+  <CA_Knick_Arm.labelNoun>小割伤</CA_Knick_Arm.labelNoun>
+  <CA_Knick_Foot.label>小割伤(足部)</CA_Knick_Foot.label>
+  <CA_Knick_Foot.stages.0.label>恢复中</CA_Knick_Foot.stages.0.label>
+  <CA_Knick_Foot.labelNoun>小割伤</CA_Knick_Foot.labelNoun>
+  <CA_Knick_Leg.label>小割伤(腿部)</CA_Knick_Leg.label>
+  <CA_Knick_Leg.stages.0.label>恢复中</CA_Knick_Leg.stages.0.label>
+  <CA_Knick_Leg.labelNoun>小割伤</CA_Knick_Leg.labelNoun>
+</LanguageData>
