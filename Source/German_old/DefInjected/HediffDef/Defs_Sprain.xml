@@ -1,23 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CA_Sprain_Hand.label>Verstauchung (Hand)</CA_Sprain_Hand.label>
-  <CA_Sprain_Hand.description>Da war wohl jemand unvorsichtig.</CA_Sprain_Hand.description>
   <CA_Sprain_Hand.stages.0.label>Erholen</CA_Sprain_Hand.stages.0.label>
   <CA_Sprain_Hand.labelNoun>Eine Verstauchung</CA_Sprain_Hand.labelNoun>
-  <CA_Sprain_Hand.labelNounPretty>{0} am {1}</CA_Sprain_Hand.labelNounPretty>
   <CA_Sprain_Arm.label>Verstauchung (Arm)</CA_Sprain_Arm.label>
-  <CA_Sprain_Arm.description>Da war wohl jemand unvorsichtig.</CA_Sprain_Arm.description>
   <CA_Sprain_Arm.stages.0.label>Erholen</CA_Sprain_Arm.stages.0.label>
   <CA_Sprain_Arm.labelNoun>Eine Verstauchung</CA_Sprain_Arm.labelNoun>
-  <CA_Sprain_Arm.labelNounPretty>{0} am {1}</CA_Sprain_Arm.labelNounPretty>
   <CA_Sprain_Foot.label>Verstauchung(Fuß)</CA_Sprain_Foot.label>
-  <CA_Sprain_Foot.description>Da war wohl jemand unvorsichtig.</CA_Sprain_Foot.description>
   <CA_Sprain_Foot.stages.0.label>Erholen</CA_Sprain_Foot.stages.0.label>
   <CA_Sprain_Foot.labelNoun>Eine Verstauchung</CA_Sprain_Foot.labelNoun>
-  <CA_Sprain_Foot.labelNounPretty>{0} am {1}</CA_Sprain_Foot.labelNounPretty>
   <CA_Sprain_Leg.label>Verstauchung (Bein)</CA_Sprain_Leg.label>
-  <CA_Sprain_Leg.description>Da war wohl jemand unvorsichtig.</CA_Sprain_Leg.description>
   <CA_Sprain_Leg.stages.0.label>Erholen</CA_Sprain_Leg.stages.0.label>
   <CA_Sprain_Leg.labelNoun>Eine Verstauchung</CA_Sprain_Leg.labelNoun>
-  <CA_Sprain_Leg.labelNounPretty>{0} am {1}</CA_Sprain_Leg.labelNounPretty>
 </LanguageData>

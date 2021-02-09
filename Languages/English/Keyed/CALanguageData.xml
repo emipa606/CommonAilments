@@ -19,5 +19,4 @@
   <!-- Content -->
   <ComAil.Confirmation> has contracted a common ailment of </ComAil.Confirmation>
   <ComAil.CureMsg>{0}'s ailment of {1} has been cured.</ComAil.CureMsg>
-
 </LanguageData>

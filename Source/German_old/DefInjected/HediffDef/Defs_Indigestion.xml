@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CA_Indigestion.label>Verdauungsstörungen</CA_Indigestion.label>
-  <CA_Indigestion.description>Eine nervige Verdauungsstörung.</CA_Indigestion.description>
+  <!-- Misspelling to remove -->
+  <CA_Indegestion.label>Def to remove</CA_Indegestion.label>
 </LanguageData>

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CA_CommonCold.label>Erkältung</CA_CommonCold.label>
-  <CA_CommonCold.description>Eine Erkältung.</CA_CommonCold.description>
   <CA_CommonCold.stages.0.label>anfänglich</CA_CommonCold.stages.0.label>
   <CA_CommonCold.stages.1.label>leicht</CA_CommonCold.stages.1.label>
   <CA_CommonCold.stages.2.label>stark</CA_CommonCold.stages.2.label>

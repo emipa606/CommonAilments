@@ -1,25 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <CA_Knick_Hand.label>knick (hand)</CA_Knick_Hand.label>
   <CA_Knick_Hand.description>A knick</CA_Knick_Hand.description>
   <CA_Knick_Hand.stages.0.label>Recovering</CA_Knick_Hand.stages.0.label>
   <CA_Knick_Hand.labelNoun>a knick</CA_Knick_Hand.labelNoun>
-
   <CA_Knick_Arm.label>knick (arm)</CA_Knick_Arm.label>
   <CA_Knick_Arm.description>A knick</CA_Knick_Arm.description>
   <CA_Knick_Arm.stages.0.label>Recovering</CA_Knick_Arm.stages.0.label>
   <CA_Knick_Arm.labelNoun>a knick</CA_Knick_Arm.labelNoun>
-
   <CA_Knick_Foot.label>knick (foot)</CA_Knick_Foot.label>
   <CA_Knick_Foot.description>A knick</CA_Knick_Foot.description>
   <CA_Knick_Foot.stages.0.label>Recovering</CA_Knick_Foot.stages.0.label>
   <CA_Knick_Foot.labelNoun>a knick</CA_Knick_Foot.labelNoun>
-
   <CA_Knick_Leg.label>knick (leg)</CA_Knick_Leg.label>
   <CA_Knick_Leg.description>A knick</CA_Knick_Leg.description>
   <CA_Knick_Leg.stages.0.label>Recovering</CA_Knick_Leg.stages.0.label>
   <CA_Knick_Leg.labelNoun>a knick</CA_Knick_Leg.labelNoun>
-
-
 </LanguageData>

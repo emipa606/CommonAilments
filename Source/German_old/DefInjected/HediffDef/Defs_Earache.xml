@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CA_Earache.label>Ohrenschmerzen</CA_Earache.label>
-  <CA_Earache.description>Klassische Ohrenschmerzen.</CA_Earache.description>
   <CA_Earache.stages.0.label>anfänglich</CA_Earache.stages.0.label>
   <CA_Earache.stages.1.label>leicht</CA_Earache.stages.1.label>
   <CA_Earache.stages.2.label>stark</CA_Earache.stages.2.label>

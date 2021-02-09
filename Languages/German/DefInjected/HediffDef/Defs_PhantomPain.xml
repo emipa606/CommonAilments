@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CA_PhantomPain.label>Phantomschmerzen</CA_PhantomPain.label>
+  <CA_PhantomPain.description>Phantomschmerzen</CA_PhantomPain.description>
+  <CA_PhantomPain.labelNoun>Phantomschmerzen</CA_PhantomPain.labelNoun>
+  <CA_PhantomPain.labelNounPretty>{0} in/im/am {1}</CA_PhantomPain.labelNounPretty>
+  <CA_PhantomPain.stages.Recovering.label>Erholung</CA_PhantomPain.stages.Recovering.label>
+</LanguageData>

@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <CA_Hayfever.label>Hayfever</CA_Hayfever.label>
   <CA_Hayfever.description>Hayfever</CA_Hayfever.description>
   <CA_Hayfever.stages.0.label>mild</CA_Hayfever.stages.0.label>
   <CA_Hayfever.stages.1.label>minor</CA_Hayfever.stages.1.label>
   <CA_Hayfever.stages.2.label>major</CA_Hayfever.stages.2.label>
-
-
 </LanguageData>

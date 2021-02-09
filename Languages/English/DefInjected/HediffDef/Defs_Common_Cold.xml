@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <CA_CommonCold.label>Common Cold</CA_CommonCold.label>
   <CA_CommonCold.description>Common Cold</CA_CommonCold.description>
   <CA_CommonCold.stages.0.label>mild</CA_CommonCold.stages.0.label>
   <CA_CommonCold.stages.1.label>minor</CA_CommonCold.stages.1.label>
   <CA_CommonCold.stages.2.label>major</CA_CommonCold.stages.2.label>
-
-
 </LanguageData>

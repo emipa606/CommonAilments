@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <CA_Minor_STD.label>Minor Sexually Transmitted Disease</CA_Minor_STD.label>
   <CA_Minor_STD.description>Minor Sexually Transmitted Disease</CA_Minor_STD.description>
   <CA_Minor_STD.stages.0.label>mild</CA_Minor_STD.stages.0.label>
   <CA_Minor_STD.stages.1.label>minor</CA_Minor_STD.stages.1.label>
   <CA_Minor_STD.stages.2.label>major</CA_Minor_STD.stages.2.label>
-
-
 </LanguageData>

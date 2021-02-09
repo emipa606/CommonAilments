@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <CA_Earache.label>Earache</CA_Earache.label>
   <CA_Earache.description>Earache</CA_Earache.description>
   <CA_Earache.stages.0.label>mild</CA_Earache.stages.0.label>
   <CA_Earache.stages.1.label>minor</CA_Earache.stages.1.label>
   <CA_Earache.stages.2.label>major</CA_Earache.stages.2.label>
-
-
 </LanguageData>

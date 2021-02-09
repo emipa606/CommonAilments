@@ -12,9 +12,7 @@
   <ComAil.CASTIChance>Basischance in % eine sexuell übertragbare Krankheit zu bekommen [Default 10]:</ComAil.CASTIChance>
   <ComAil.CASTIOffset>Offset eine sexuell übertragbare Krankheit zu bekommen (Höherer Negativer Wert = weniger Chance): [Default -50]:</ComAil.CASTIOffset>
   <ComAil.CanAddScenario>Zulassen, dass Allgemeine Beschwerden zu Szenarien hinzugefügt werden:</ComAil.CanAddScenario>
-  <ComAil.ChangeValueTip>Änderungen an dieser Einstellung werden nach dem Neustart von Rimworld übernommen.</ComAil.ChangeValueTip>
-  <ComAil.DoSymptoms>Erlaube schwereren Krankheiten, allgemeine Beschwerden als Symptome zu verwenden:</ComAil.DoSymptoms>
-  <ComAil.Symptomatic>Allgemeine Beschwerden fügten {0} Krankheiten potenzielles symptomatisches Verhalten hinzu</ComAil.Symptomatic>
+  <ComAil.ChangeValueTip>Änderungen an dieser Einstellung werden nach dem Neustart von Rimworld übernommen.)</ComAil.ChangeValueTip>
   <!-- Content -->
   <ComAil.Confirmation> hat ein gemeinsames Leiden von </ComAil.Confirmation>
   <ComAil.CureMsg>{0}'s Krankheit von {1} wurde geheilt.</ComAil.CureMsg>

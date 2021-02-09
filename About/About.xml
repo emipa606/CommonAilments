@@ -19,31 +19,34 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>Update of peladors mod
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2003149630
 
-[img]https://i.imgur.com/GYswkZ7.png[/img]
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
-Support-chat:
-https://invite.gg/mlie
-
-Non-steam version:
-https://github.com/emipa606/CommonAilments
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/CommonAilments][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
-Overview
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
+[h1]Overview[/h1] V1.1
 
 Adds various common illnesses and conditions.
 
-Details
+[h1]Details[/h1]
 
 Further details about this mod are provided in the following PDF:
 
-Common Ailments Notes: https://1drv.ms/b/s!Au3GsmKyQkDYi_1j-2IkA-ijOtuEcA?e=s4Bq4h
+[url=https://1drv.ms/b/s!Au3GsmKyQkDYi_1j-2IkA-ijOtuEcA?e=s4Bq4h]Common Ailments Notes[/url]
 
 
-Compatibility
-*** Subject to conversion ***
+
+[h1]Compatibility[/h1]  *** Subject to conversion ***
 
 The following mods in addition to vanilla have had their drugs patched to allow for best use with this mod:
 
@@ -51,7 +54,7 @@ Apothecary
 Diseases Overhauled
 Medical Supplements
 Multiplayer Support
-Orassans and Orrasans Lite (catnip).
+Orassons and Orrasons Lite (catnip).
 RimCuisine 1.0
 RimCuisine 2.0
 Social Supplements
@@ -61,14 +64,28 @@ VGP Garden Medicine
 
 Dubs hygiene - Increases synergy with illnesses and hygiene.
 
-Credits
+[h1]Credits[/h1]
 
 Chinese (Simplified) translation - Maxwell.J
 German translation - Erdnussbrot
 
-Future Considerations
+[h1]Future Considerations[/h1]
 
 1) Contagious illnesses potentially transferring.
 
-(CC BY-NC-SA 4.0)</description>
+
+(CC BY-NC-SA 4.0)
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+
