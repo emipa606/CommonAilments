@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RimCuisine 2: Smokes and Shrooms Expansion (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="RC2_DreamstickHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_DreamstickHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_DreamstickHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="RC2_FloxacineHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_FloxacineHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_SoreThroat</li>
+              <li>CA_SkinRash</li>
+              <li>CA_Conjunctivitis</li>
+              <li>CA_Minor_STD</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_FloxacineHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_SoreThroat</li>
+                <li>CA_SkinRash</li>
+                <li>CA_Conjunctivitis</li>
+                <li>CA_Minor_STD</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="RC2_SkagHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_SkagHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_SkagHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="RC2_TangoHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_TangoHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_TangoHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="RC2_VikoHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_VikoHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_VikoHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="RC2_ZopeHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_ZopeHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_ZopeHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[1.0, 1.1] RimCuisine 2 Core</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="RC2_Caffeine"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_Caffeine"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_Caffeine"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="RC2_CaffeineTea"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_CaffeineTea"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="RC2_CaffeineTea"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!--
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[1.0] RimCuisine 2: Bottling and Brewing Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/HediffDef[defName=""]/stages//makeImmuneTo</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName=""]/stages//makeImmuneTo</xpath>
+					<value>
+
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName=""]/stages/li</xpath>
+					<value>
+						<makeImmuneTo>
+
+						</makeImmuneTo>
+					</value>
+				</nomatch>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+	-->
+  <!--
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[1.0] RimCuisine 2 Meals and Munchies Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/HediffDef[defName=""]/stages//makeImmuneTo</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName=""]/stages//makeImmuneTo</xpath>
+					<value>
+
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName=""]/stages/li</xpath>
+					<value>
+						<makeImmuneTo>
+
+						</makeImmuneTo>
+					</value>
+				</nomatch>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+	-->
+</Patch>
