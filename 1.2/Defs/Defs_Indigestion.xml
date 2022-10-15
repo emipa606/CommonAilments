@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="InfectionBase">
+    <defName>CA_Indigestion</defName>
+    <label>Indigestion</label>
+    <description>Indigestion</description>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>false</tendable>
+    <defaultLabelColor>(0.32,0.7,0.32)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>0.5</maxSeverity>
+    <initialSeverity>0.5</initialSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.95</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+      <li Class="ComAil.HediffCompProperties_CACure">
+        <CureHoursMin>2</CureHoursMin>
+        <CureHoursMax>3</CureHoursMax>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <lifeThreatening>false</lifeThreatening>
+        <statOffsets>
+          <EatingSpeed>-0.03</EatingSpeed>
+        </statOffsets>
+        <painOffset>0.02</painOffset>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <statOffsets>
+          <EatingSpeed>-0.05</EatingSpeed>
+        </statOffsets>
+        <painOffset>0.03</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

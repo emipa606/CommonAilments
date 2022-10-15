@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="InjuryBase">
+    <defName>CA_PhantomPain</defName>
+    <label>Phantom pain</label>
+    <description>Phantom pain</description>
+    <labelNoun>phantom pain</labelNoun>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.32,0.7,0.32)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>3.0</maxSeverity>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.95</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+      <li Class="ComAil.HediffCompProperties_CACure">
+        <CureHoursMin>4</CureHoursMin>
+        <CureHoursMax>12</CureHoursMax>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>Recovering</label>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.03</painOffset>
+        <statOffsets>
+          <WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.02</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>1.0</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.05</painOffset>
+        <statOffsets>
+          <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.03</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>2.0</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.07</painOffset>
+        <statOffsets>
+          <WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="InfectionBase">
+    <defName>CA_Minor_STD</defName>
+    <label>Minor Sexually Transmitted Disease</label>
+    <description>Minor Sexually Transmitted Disease</description>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>true</tendable>
+    <defaultLabelColor>(0.32,0.7,0.32)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>5.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.95</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>12</baseTendDurationHours>
+        <disappearsAtTotalTendQuality>3</disappearsAtTotalTendQuality>
+      </li>
+      <li Class="ComAil.HediffCompProperties_CACure">
+        <CureHoursMin>12</CureHoursMin>
+        <CureHoursMax>24</CureHoursMax>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>mild</label>
+        <lifeThreatening>false</lifeThreatening>
+        <statOffsets>
+          <SocialImpact>-0.01</SocialImpact>
+          <ToxicResistance>-0.01</ToxicResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.01</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>2.0</minSeverity>
+        <label>minor</label>
+        <lifeThreatening>false</lifeThreatening>
+        <statOffsets>
+          <SocialImpact>-0.02</SocialImpact>
+          <ToxicResistance>-0.02</ToxicResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.03</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>3.5</minSeverity>
+        <label>major</label>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.03</painOffset>
+        <statOffsets>
+          <SocialImpact>-0.03</SocialImpact>
+          <ToxicResistance>-0.03</ToxicResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThoughtDef>
+    <defName>CA_Minor_STD_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CA_Minor_STD</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Minor STD mood</label>
+        <description>Lowered mood due to STD.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>Minor STD mood</label>
+        <description>Poor mood due to STD.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>Minor STD mood</label>
+        <description>Bad mood due to STD.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

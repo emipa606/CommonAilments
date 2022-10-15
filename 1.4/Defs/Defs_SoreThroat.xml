@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="InfectionBase">
+    <defName>CA_SoreThroat</defName>
+    <label>Sore Throat</label>
+    <description>Sore Throat</description>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>false</tendable>
+    <defaultLabelColor>(0.32,0.7,0.32)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>0.5</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.95</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+      <li Class="ComAil.HediffCompProperties_CACure">
+        <CureHoursMin>1</CureHoursMin>
+        <CureHoursMax>2</CureHoursMax>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <lifeThreatening>false</lifeThreatening>
+        <statOffsets>
+          <NegotiationAbility>-0.05</NegotiationAbility>
+          <TameAnimalChance>-0.03</TameAnimalChance>
+          <TrainAnimalChance>-0.02</TrainAnimalChance>
+          <EatingSpeed>-0.05</EatingSpeed>
+        </statOffsets>
+        <painOffset>0.02</painOffset>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

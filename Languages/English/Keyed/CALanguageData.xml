@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- Settings -->
+  <ComAil.CurrentModVersion>Installed mod-version: {0}</ComAil.CurrentModVersion>
   <ComAil.Name>Common Ailments</ComAil.Name>
   <ComAil.DoAilments>Allow Common Ailments:</ComAil.DoAilments>
   <ComAil.DoSymptoms>Allow more severe illnesses to use Common Ailments as symptoms:</ComAil.DoSymptoms>

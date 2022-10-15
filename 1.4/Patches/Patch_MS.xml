@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medical Supplements (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimoxicillin_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimoxicillin_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_SoreThroat</li>
+              <li>CA_SkinRash</li>
+              <li>CA_Conjunctivitis</li>
+              <li>CA_Minor_STD</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimoxicillin_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_SoreThroat</li>
+                <li>CA_SkinRash</li>
+                <li>CA_Conjunctivitis</li>
+                <li>CA_Minor_STD</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSFireThroat_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSFireThroat_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_CommonCold</li>
+              <li>CA_SoreThroat</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSFireThroat_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_CommonCold</li>
+                <li>CA_SoreThroat</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSMultiVitamins_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSMultiVitamins_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_CommonCold</li>
+              <li>CA_Indigestion</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSMultiVitamins_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_CommonCold</li>
+                <li>CA_Indigestion</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSInhaler_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSInhaler_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Hayfever</li>
+              <li>CA_Sinusitis</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSInhaler_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Hayfever</li>
+                <li>CA_Sinusitis</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimpepticHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimpepticHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Indigestion</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimpepticHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Indigestion</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimCodamol_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimCodamol_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimCodamol_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSMorphine_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSMorphine_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSMorphine_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSOpiumPipe_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSOpiumPipe_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_Migraine</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSOpiumPipe_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_Migraine</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimcetamol_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimcetamol_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_CommonCold</li>
+              <li>CA_Headache</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimcetamol_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_CommonCold</li>
+                <li>CA_Headache</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimtarolHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimtarolHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+              <li>CA_SkinRash</li>
+              <li>CA_Minor_STD</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimtarolHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+                <li>CA_SkinRash</li>
+                <li>CA_Minor_STD</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimedicrem_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimedicrem_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_SkinRash</li>
+              <li>CA_Minor_STD</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimedicrem_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_SkinRash</li>
+                <li>CA_Minor_STD</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimBurnEazeHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimBurnEazeHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_SkinRash</li>
+              <li>CA_Minor_STD</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimBurnEazeHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_SkinRash</li>
+                <li>CA_Minor_STD</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSAspirin_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSAspirin_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Headache</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSAspirin_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Headache</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSClarity_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSClarity_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Restless</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSClarity_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Restless</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimSnooze_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimSnooze_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Restless</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimSnooze_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Restless</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSMetasisHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSMetasisHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_CommonCold</li>
+              <li>CA_SkinRash</li>
+              <li>CA_Conjunctivitis</li>
+              <li>CA_Knick_Hand</li>
+              <li>CA_Knick_Arm</li>
+              <li>CA_Knick_Foot</li>
+              <li>CA_Knick_Leg</li>
+              <li>CA_Sprain_Hand</li>
+              <li>CA_Sprain_Arm</li>
+              <li>CA_Sprain_Foot</li>
+              <li>CA_Sprain_Leg</li>
+              <li>CA_Headache</li>
+              <li>CA_Earache</li>
+              <li>CA_Sinusitis</li>
+              <li>CA_Minor_STD</li>
+              <li>CA_PhantomPain</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSMetasisHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_CommonCold</li>
+                <li>CA_SkinRash</li>
+                <li>CA_Conjunctivitis</li>
+                <li>CA_Knick_Hand</li>
+                <li>CA_Knick_Arm</li>
+                <li>CA_Knick_Foot</li>
+                <li>CA_Knick_Leg</li>
+                <li>CA_Sprain_Hand</li>
+                <li>CA_Sprain_Arm</li>
+                <li>CA_Sprain_Foot</li>
+                <li>CA_Sprain_Leg</li>
+                <li>CA_Headache</li>
+                <li>CA_Earache</li>
+                <li>CA_Sinusitis</li>
+                <li>CA_Minor_STD</li>
+                <li>CA_PhantomPain</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSBattleStim_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSBattleStim_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_CommonCold</li>
+              <li>CA_SkinRash</li>
+              <li>CA_Conjunctivitis</li>
+              <li>CA_Knick_Hand</li>
+              <li>CA_Knick_Arm</li>
+              <li>CA_Knick_Foot</li>
+              <li>CA_Knick_Leg</li>
+              <li>CA_Sprain_Hand</li>
+              <li>CA_Sprain_Arm</li>
+              <li>CA_Sprain_Foot</li>
+              <li>CA_Sprain_Leg</li>
+              <li>CA_Headache</li>
+              <li>CA_Earache</li>
+              <li>CA_Sinusitis</li>
+              <li>CA_Minor_STD</li>
+              <li>CA_PhantomPain</li>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSBattleStim_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_CommonCold</li>
+                <li>CA_SkinRash</li>
+                <li>CA_Conjunctivitis</li>
+                <li>CA_Knick_Hand</li>
+                <li>CA_Knick_Arm</li>
+                <li>CA_Knick_Foot</li>
+                <li>CA_Knick_Leg</li>
+                <li>CA_Sprain_Hand</li>
+                <li>CA_Sprain_Arm</li>
+                <li>CA_Sprain_Foot</li>
+                <li>CA_Sprain_Leg</li>
+                <li>CA_Headache</li>
+                <li>CA_Earache</li>
+                <li>CA_Sinusitis</li>
+                <li>CA_Minor_STD</li>
+                <li>CA_PhantomPain</li>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSCondom_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSCondom_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Minor_STD</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSCondom_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Minor_STD</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSRimProPlus_High"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimProPlus_High"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSRimProPlus_High"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/HediffDef[defName="MSSmellSaltsHigh"]/stages//makeImmuneTo</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSSmellSaltsHigh"]/stages//makeImmuneTo</xpath>
+            <value>
+              <li>CA_Fatigue</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="MSSmellSaltsHigh"]/stages/li</xpath>
+            <value>
+              <makeImmuneTo>
+                <li>CA_Fatigue</li>
+              </makeImmuneTo>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
