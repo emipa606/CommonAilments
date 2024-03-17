@@ -18,7 +18,7 @@ internal static class MultiplayerSupport
         }
 
         MethodInfo[] array =
-        {
+        [
             AccessTools.Method(typeof(CommonAilments), "CommonAilmentsTick"),
             AccessTools.Method(typeof(CommonAilments), "GetRndAilment"),
             AccessTools.Method(typeof(CommonAilments), "GetBPHed"),
@@ -27,7 +27,7 @@ internal static class MultiplayerSupport
             AccessTools.Method(typeof(HediffComp_CACure), "SetTicksToCure"),
             AccessTools.Method(typeof(PawnCAData), "PawnCADataTickSet"),
             AccessTools.Method(typeof(GenerateRandomMinTicksToNextLovin_PostPatch), "GetARnd")
-        };
+        ];
         foreach (var methodInfo in array)
         {
             FixRNG(methodInfo);

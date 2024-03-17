@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Verse;
 
 namespace ComAil;
@@ -50,7 +49,7 @@ internal static class ComAil_Options_Initializer
 
         if (def.comps == null)
         {
-            def.comps = new List<HediffCompProperties>();
+            def.comps = [];
         }
 
         def.comps.Add((HediffCompProperties)Activator.CreateInstance(compType));

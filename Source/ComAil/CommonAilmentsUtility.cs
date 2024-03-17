@@ -74,7 +74,7 @@ internal class CommonAilmentsUtility
 
     internal static bool ImmuneTo(Pawn pawn, HediffDef def, out List<string> Immunities)
     {
-        Immunities = new List<string>();
+        Immunities = [];
         var immune = false;
         var hediffs = pawn.health.hediffSet.hediffs;
         foreach (var hediff in hediffs)

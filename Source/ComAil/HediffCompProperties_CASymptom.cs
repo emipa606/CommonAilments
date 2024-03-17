@@ -4,7 +4,7 @@ namespace ComAil;
 
 public class HediffCompProperties_CASymptom : HediffCompProperties
 {
-    public float symptomChance = 25f;
+    public readonly float symptomChance = 25f;
 
     public HediffCompProperties_CASymptom()
     {

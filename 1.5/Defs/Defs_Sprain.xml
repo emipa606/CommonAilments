@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="InjuryBase" Name="CA_Sprain" Abstract="true">
+    <label>sprain</label>
+    <description>Sprain</description>
+    <labelNoun>a sprain</labelNoun>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.32,0.7,0.32)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>1.0</initialSeverity>
+    <isBad>false</isBad>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>48</baseTendDurationHours>
+        <severityPerDayTended>-1.0</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+      <li Class="ComAil.HediffCompProperties_CACure">
+        <CureHoursMin>3</CureHoursMin>
+        <CureHoursMax>5</CureHoursMax>
+      </li>
+    </comps>
+  </HediffDef>
+  <HediffDef ParentName="CA_Sprain">
+    <defName>CA_Sprain_Hand</defName>
+    <label>sprain (hand)</label>
+    <stages>
+      <li>
+        <label>Recovering</label>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.05</painOffset>
+        <statOffsets>
+          <MeleeHitChance>-0.01</MeleeHitChance>
+          <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.02</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.33</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.07</painOffset>
+        <statOffsets>
+          <MeleeHitChance>-0.02</MeleeHitChance>
+          <WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.03</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.67</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.1</painOffset>
+        <statOffsets>
+          <MeleeHitChance>-0.03</MeleeHitChance>
+          <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef ParentName="CA_Sprain">
+    <defName>CA_Sprain_Arm</defName>
+    <label>sprain (arm)</label>
+    <stages>
+      <li>
+        <label>Recovering</label>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.05</painOffset>
+        <statOffsets>
+          <MeleeHitChance>-0.02</MeleeHitChance>
+          <WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.02</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.33</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.07</painOffset>
+        <statOffsets>
+          <MeleeHitChance>-0.04</MeleeHitChance>
+          <WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.03</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.67</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.1</painOffset>
+        <statOffsets>
+          <MeleeHitChance>-0.06</MeleeHitChance>
+          <WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+        </statOffsets>
+        <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef ParentName="CA_Sprain">
+    <defName>CA_Sprain_Foot</defName>
+    <label>sprain (foot)</label>
+    <stages>
+      <li>
+        <label>Recovering</label>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.05</painOffset>
+        <statOffsets>
+          <MeleeDodgeChance>-0.02</MeleeDodgeChance>
+        </statOffsets>
+        <partEfficiencyOffset>-0.03</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.33</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.07</painOffset>
+        <statOffsets>
+          <MeleeDodgeChance>-0.03</MeleeDodgeChance>
+        </statOffsets>
+        <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.67</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.1</painOffset>
+        <statOffsets>
+          <MeleeDodgeChance>-0.05</MeleeDodgeChance>
+        </statOffsets>
+        <partEfficiencyOffset>-0.07</partEfficiencyOffset>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef ParentName="CA_Sprain">
+    <defName>CA_Sprain_Leg</defName>
+    <label>sprain (leg)</label>
+    <stages>
+      <li>
+        <label>Recovering</label>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.05</painOffset>
+        <statOffsets>
+          <MeleeDodgeChance>-0.02</MeleeDodgeChance>
+        </statOffsets>
+        <partEfficiencyOffset>-0.03</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.33</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.07</painOffset>
+        <statOffsets>
+          <MeleeDodgeChance>-0.03</MeleeDodgeChance>
+        </statOffsets>
+        <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.67</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>+0.1</painOffset>
+        <statOffsets>
+          <MeleeDodgeChance>-0.05</MeleeDodgeChance>
+        </statOffsets>
+        <partEfficiencyOffset>-0.07</partEfficiencyOffset>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

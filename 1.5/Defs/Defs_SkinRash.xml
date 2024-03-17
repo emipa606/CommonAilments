@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="InfectionBase">
+    <defName>CA_SkinRash</defName>
+    <label>Skin Rash</label>
+    <description>Skin Rash</description>
+    <makesSickThought>false</makesSickThought>
+    <lethalSeverity>-1</lethalSeverity>
+    <defaultLabelColor>(0.32,0.7,0.32)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>5.0</maxSeverity>
+    <isBad>false</isBad>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>24</baseTendDurationHours>
+        <disappearsAtTotalTendQuality>2</disappearsAtTotalTendQuality>
+      </li>
+      <li Class="ComAil.HediffCompProperties_CACure">
+        <CureHoursMin>24</CureHoursMin>
+        <CureHoursMax>36</CureHoursMax>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <lifeThreatening>false</lifeThreatening>
+        <restFallFactor>0.95</restFallFactor>
+        <statOffsets>
+          <SocialImpact>-0.01</SocialImpact>
+          <ToxicResistance>-0.01</ToxicResistance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>1.0</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <restFallFactor>0.95</restFallFactor>
+        <statOffsets>
+          <SocialImpact>-0.02</SocialImpact>
+          <ToxicResistance>-0.02</ToxicResistance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2.0</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <restFallFactor>0.95</restFallFactor>
+        <statOffsets>
+          <SocialImpact>-0.03</SocialImpact>
+          <ToxicResistance>-0.03</ToxicResistance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3.0</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <restFallFactor>0.95</restFallFactor>
+        <statOffsets>
+          <SocialImpact>-0.05</SocialImpact>
+          <ToxicResistance>-0.04</ToxicResistance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4.0</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <restFallFactor>0.95</restFallFactor>
+        <statOffsets>
+          <SocialImpact>-0.07</SocialImpact>
+          <ToxicResistance>-0.05</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

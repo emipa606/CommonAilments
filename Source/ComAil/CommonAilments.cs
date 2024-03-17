@@ -524,11 +524,11 @@ public class CommonAilments
         list.Add(SLD);
         SLD = new SickListData(HediffDefOf.Malnutrition, 1);
         list.Add(SLD);
-        SLD = new SickListData(HediffDefOf.Malaria, 2);
+        SLD = new SickListData(DefDatabase<HediffDef>.GetNamedSilentFail("Malaria"), 2);
         list.Add(SLD);
         SLD = new SickListData(HediffDefOf.FoodPoisoning, 1);
         list.Add(SLD);
-        SLD = new SickListData(HediffDefOf.Flu, 1);
+        SLD = new SickListData(DefDatabase<HediffDef>.GetNamedSilentFail("Flu"), 1);
         list.Add(SLD);
         SLD = new SickListData(HediffDefOf.CryptosleepSickness, 2);
         list.Add(SLD);
@@ -654,7 +654,7 @@ public class CommonAilments
             else
             {
                 var hediffSet2 = health2.hediffSet;
-                b = hediffSet2?.GetFirstHediffOfDef(HediffDefOf.Frail) != null;
+                b = hediffSet2?.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamedSilentFail("Frail")) != null;
             }
         }
 

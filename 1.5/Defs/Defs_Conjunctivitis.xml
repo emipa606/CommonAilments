@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="InfectionBase">
+    <defName>CA_Conjunctivitis</defName>
+    <label>Conjunctivitis</label>
+    <description>Conjunctivitis</description>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>true</tendable>
+    <defaultLabelColor>(0.32,0.7,0.32)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>5.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.95</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>12</baseTendDurationHours>
+        <disappearsAtTotalTendQuality>2</disappearsAtTotalTendQuality>
+      </li>
+      <li Class="ComAil.HediffCompProperties_CACure">
+        <CureHoursMin>5</CureHoursMin>
+        <CureHoursMax>8</CureHoursMax>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>mild</label>
+        <lifeThreatening>false</lifeThreatening>
+        <statOffsets>
+          <SocialImpact>-0.01</SocialImpact>
+          <ToxicResistance>-0.01</ToxicResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.03</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>2.5</minSeverity>
+        <label>minor</label>
+        <lifeThreatening>false</lifeThreatening>
+        <statOffsets>
+          <SocialImpact>-0.02</SocialImpact>
+          <ToxicResistance>-0.02</ToxicResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>4.0</minSeverity>
+        <label>major</label>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.03</painOffset>
+        <statOffsets>
+          <SocialImpact>-0.03</SocialImpact>
+          <ToxicResistance>-0.03</ToxicResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.07</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

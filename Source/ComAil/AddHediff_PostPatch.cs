@@ -11,14 +11,11 @@ public class AddHediff_PostPatch
 {
     [HarmonyPostfix]
     [HarmonyPriority(0)]
-    public static void PostFix(ref Pawn_HealthTracker __instance, ref Hediff __result, ref Pawn ___pawn,
-        HediffDef def, BodyPartRecord part = null, DamageInfo? dinfo = null,
-        DamageWorker.DamageResult result = null)
+    public static void PostFix(ref Hediff __result, ref Pawn ___pawn, HediffDef def, BodyPartRecord part = null)
     {
         if (!Controller.Settings.DoAilments || GenDate.DaysPassed < Controller.Settings.CAStartDays ||
             __result == null || Controller.Settings.CAChance <= 0 || ___pawn == null || part == null ||
-            !CommonAilments.PawnCanAcceptCA(___pawn) || def?.addedPartProps == null ||
-            !def.addedPartProps.solid)
+            !CommonAilments.PawnCanAcceptCA(___pawn) || def?.addedPartProps is not { solid: true })
         {
             return;
         }
