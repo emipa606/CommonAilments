@@ -30,53 +30,53 @@ public class Settings : ModSettings
     public void DoWindowContents(Rect canvas)
     {
         var gap = 8f;
-        var listing_Standard = new Listing_Standard { ColumnWidth = canvas.width };
-        listing_Standard.Begin(canvas);
-        listing_Standard.Gap(gap);
-        listing_Standard.CheckboxLabeled("ComAil.DoAilments".Translate(), ref DoAilments);
-        listing_Standard.Gap(gap);
-        listing_Standard.CheckboxLabeled("ComAil.DoSymptoms".Translate(), ref DoSymptoms);
-        listing_Standard.Gap(gap);
-        listing_Standard.CheckboxLabeled("ComAil.DoMsgs".Translate(), ref DoMsgs);
-        listing_Standard.Gap(gap);
-        listing_Standard.CheckboxLabeled("ComAil.NegHealthSound".Translate(), ref NegHealthSound);
-        listing_Standard.Gap(gap);
-        listing_Standard.Label("ComAil.CAStartDays".Translate() + "  " + CAStartDays);
+        var listingStandard = new Listing_Standard { ColumnWidth = canvas.width };
+        listingStandard.Begin(canvas);
+        listingStandard.Gap(gap);
+        listingStandard.CheckboxLabeled("ComAil.DoAilments".Translate(), ref DoAilments);
+        listingStandard.Gap(gap);
+        listingStandard.CheckboxLabeled("ComAil.DoSymptoms".Translate(), ref DoSymptoms);
+        listingStandard.Gap(gap);
+        listingStandard.CheckboxLabeled("ComAil.DoMsgs".Translate(), ref DoMsgs);
+        listingStandard.Gap(gap);
+        listingStandard.CheckboxLabeled("ComAil.NegHealthSound".Translate(), ref NegHealthSound);
+        listingStandard.Gap(gap);
+        listingStandard.Label("ComAil.CAStartDays".Translate() + "  " + CAStartDays);
         checked
         {
-            CAStartDays = (int)listing_Standard.Slider(CAStartDays, 0f, 150f);
-            listing_Standard.Gap(gap);
-            listing_Standard.Label("ComAil.CAFrequency".Translate() + "  " + CAFrequency);
-            CAFrequency = (int)listing_Standard.Slider(CAFrequency, 6f, 72f);
-            listing_Standard.Gap(gap);
-            listing_Standard.Label("ComAil.CAChance".Translate() + "  " + CAChance);
-            CAChance = (int)listing_Standard.Slider(CAChance, 1f, 25f);
-            listing_Standard.Gap(gap);
-            listing_Standard.CheckboxLabeled("ComAil.DoSTI".Translate(), ref DoSTI);
-            listing_Standard.Gap(gap);
-            listing_Standard.Label("ComAil.CASTIChance".Translate() + "  " + CASTIChance);
-            CASTIChance = (int)listing_Standard.Slider(CASTIChance, 1f, 25f);
-            listing_Standard.Gap(gap);
-            listing_Standard.Label("ComAil.CASTIOffset".Translate() + "  " + CASTIOffset);
-            CASTIOffset = (int)listing_Standard.Slider(CASTIOffset, -150f, 0f);
-            listing_Standard.Gap(gap);
-            listing_Standard.CheckboxLabeled("ComAil.CanAddScenario".Translate(), ref CACanAddScenario);
+            CAStartDays = (int)listingStandard.Slider(CAStartDays, 0f, 150f);
+            listingStandard.Gap(gap);
+            listingStandard.Label("ComAil.CAFrequency".Translate() + "  " + CAFrequency);
+            CAFrequency = (int)listingStandard.Slider(CAFrequency, 6f, 72f);
+            listingStandard.Gap(gap);
+            listingStandard.Label("ComAil.CAChance".Translate() + "  " + CAChance);
+            CAChance = (int)listingStandard.Slider(CAChance, 1f, 25f);
+            listingStandard.Gap(gap);
+            listingStandard.CheckboxLabeled("ComAil.DoSTI".Translate(), ref DoSTI);
+            listingStandard.Gap(gap);
+            listingStandard.Label("ComAil.CASTIChance".Translate() + "  " + CASTIChance);
+            CASTIChance = (int)listingStandard.Slider(CASTIChance, 1f, 25f);
+            listingStandard.Gap(gap);
+            listingStandard.Label("ComAil.CASTIOffset".Translate() + "  " + CASTIOffset);
+            CASTIOffset = (int)listingStandard.Slider(CASTIOffset, -150f, 0f);
+            listingStandard.Gap(gap);
+            listingStandard.CheckboxLabeled("ComAil.CanAddScenario".Translate(), ref CACanAddScenario);
         }
 
-        listing_Standard.Gap(gap - 2f);
+        listingStandard.Gap(gap - 2f);
         Text.Font = GameFont.Tiny;
-        listing_Standard.Label("          " + "ComAil.ChangeValueTip".Translate());
+        listingStandard.Label("          " + "ComAil.ChangeValueTip".Translate());
         Text.Font = GameFont.Small;
-        listing_Standard.Gap(gap);
+        listingStandard.Gap(gap);
         if (Controller.currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("ComAil.CurrentModVersion".Translate(Controller.currentVersion));
+            listingStandard.Label("ComAil.CurrentModVersion".Translate(Controller.currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
     }
 
     public override void ExposeData()

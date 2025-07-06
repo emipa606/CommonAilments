@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: knick (arm) -->
+  <CA_Knick_Arm.label>knick (arm)</CA_Knick_Arm.label>
+  <!-- EN: A knick -->
+  <CA_Knick_Arm.description>A knick</CA_Knick_Arm.description>
+  <!-- EN: a knick -->
+  <CA_Knick_Arm.labelNoun>a knick</CA_Knick_Arm.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_Knick_Arm.labelNounPretty>{0} in the {1}</CA_Knick_Arm.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_Knick_Arm.stages.Recovering.label>Recovering</CA_Knick_Arm.stages.Recovering.label>
+  <!-- EN: knick (foot) -->
+  <CA_Knick_Foot.label>knick (foot)</CA_Knick_Foot.label>
+  <!-- EN: A knick -->
+  <CA_Knick_Foot.description>A knick</CA_Knick_Foot.description>
+  <!-- EN: a knick -->
+  <CA_Knick_Foot.labelNoun>a knick</CA_Knick_Foot.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_Knick_Foot.labelNounPretty>{0} in the {1}</CA_Knick_Foot.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_Knick_Foot.stages.Recovering.label>Recovering</CA_Knick_Foot.stages.Recovering.label>
+  <!-- EN: knick (hand) -->
+  <CA_Knick_Hand.label>knick (hand)</CA_Knick_Hand.label>
+  <!-- EN: A knick -->
+  <CA_Knick_Hand.description>A knick</CA_Knick_Hand.description>
+  <!-- EN: a knick -->
+  <CA_Knick_Hand.labelNoun>a knick</CA_Knick_Hand.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_Knick_Hand.labelNounPretty>{0} in the {1}</CA_Knick_Hand.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_Knick_Hand.stages.Recovering.label>Recovering</CA_Knick_Hand.stages.Recovering.label>
+  <!-- EN: knick (leg) -->
+  <CA_Knick_Leg.label>knick (leg)</CA_Knick_Leg.label>
+  <!-- EN: A knick -->
+  <CA_Knick_Leg.description>A knick</CA_Knick_Leg.description>
+  <!-- EN: a knick -->
+  <CA_Knick_Leg.labelNoun>a knick</CA_Knick_Leg.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_Knick_Leg.labelNounPretty>{0} in the {1}</CA_Knick_Leg.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_Knick_Leg.stages.Recovering.label>Recovering</CA_Knick_Leg.stages.Recovering.label>
+</LanguageData>

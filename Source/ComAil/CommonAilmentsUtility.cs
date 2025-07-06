@@ -191,7 +191,7 @@ internal class CommonAilmentsUtility
         return list;
     }
 
-    public static List<string> Symptoms()
+    private static List<string> Symptoms()
     {
         var list = new List<string>();
         list.AddDistinct("CA_CommonCold");
@@ -212,12 +212,12 @@ internal class CommonAilmentsUtility
 
         var maxSev = Math.Max(1f, def.maxSeverity);
         var sev = RandNum(0.33f, maxSev);
-        if (CommonAilments.HasCA(p, def) || !HediffEffect(def, sev, p, null, out _))
+        if (CommonAilments.HasCa(p, def) || !HediffEffect(def, sev, p, null, out _))
         {
             return;
         }
 
-        CommonAilments.SendCAMsg(p, def);
+        CommonAilments.SendCaMsg(p, def);
         PawnCAData.PawnCADataTickSet(p, true);
     }
 }

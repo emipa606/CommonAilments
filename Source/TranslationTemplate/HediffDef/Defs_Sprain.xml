@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: sprain (arm) -->
+  <CA_Sprain_Arm.label>sprain (arm)</CA_Sprain_Arm.label>
+  <!-- EN: Sprain -->
+  <CA_Sprain_Arm.description>Sprain</CA_Sprain_Arm.description>
+  <!-- EN: a sprain -->
+  <CA_Sprain_Arm.labelNoun>a sprain</CA_Sprain_Arm.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_Sprain_Arm.labelNounPretty>{0} in the {1}</CA_Sprain_Arm.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_Sprain_Arm.stages.Recovering.label>Recovering</CA_Sprain_Arm.stages.Recovering.label>
+  <!-- EN: sprain (foot) -->
+  <CA_Sprain_Foot.label>sprain (foot)</CA_Sprain_Foot.label>
+  <!-- EN: Sprain -->
+  <CA_Sprain_Foot.description>Sprain</CA_Sprain_Foot.description>
+  <!-- EN: a sprain -->
+  <CA_Sprain_Foot.labelNoun>a sprain</CA_Sprain_Foot.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_Sprain_Foot.labelNounPretty>{0} in the {1}</CA_Sprain_Foot.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_Sprain_Foot.stages.Recovering.label>Recovering</CA_Sprain_Foot.stages.Recovering.label>
+  <!-- EN: sprain (hand) -->
+  <CA_Sprain_Hand.label>sprain (hand)</CA_Sprain_Hand.label>
+  <!-- EN: Sprain -->
+  <CA_Sprain_Hand.description>Sprain</CA_Sprain_Hand.description>
+  <!-- EN: a sprain -->
+  <CA_Sprain_Hand.labelNoun>a sprain</CA_Sprain_Hand.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_Sprain_Hand.labelNounPretty>{0} in the {1}</CA_Sprain_Hand.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_Sprain_Hand.stages.Recovering.label>Recovering</CA_Sprain_Hand.stages.Recovering.label>
+  <!-- EN: sprain (leg) -->
+  <CA_Sprain_Leg.label>sprain (leg)</CA_Sprain_Leg.label>
+  <!-- EN: Sprain -->
+  <CA_Sprain_Leg.description>Sprain</CA_Sprain_Leg.description>
+  <!-- EN: a sprain -->
+  <CA_Sprain_Leg.labelNoun>a sprain</CA_Sprain_Leg.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_Sprain_Leg.labelNounPretty>{0} in the {1}</CA_Sprain_Leg.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_Sprain_Leg.stages.Recovering.label>Recovering</CA_Sprain_Leg.stages.Recovering.label>
+</LanguageData>

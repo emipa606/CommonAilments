@@ -5,7 +5,7 @@ using Verse;
 namespace ComAil;
 
 [HarmonyPatch(typeof(IncidentQueue), "IncidentQueueTick")]
-public class IncidentQueueTick_PostPatch
+public class IncidentQueue_IncidentQueueTick
 {
     [HarmonyPostfix]
     public static void PostFix()

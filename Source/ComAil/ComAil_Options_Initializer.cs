@@ -11,46 +11,40 @@ internal static class ComAil_Options_Initializer
         LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
     }
 
-    public static void Setup()
+    private static void Setup()
     {
         var allDefsListForReading = DefDatabase<HediffDef>.AllDefsListForReading;
-        var ComAilDefNames = CommonAilmentsUtility.GetComAilDefNames();
-        var SymptomaticList = CommonAilmentsUtility.Symptomatic();
+        var comAilDefNames = CommonAilmentsUtility.GetComAilDefNames();
+        var symptomaticList = CommonAilmentsUtility.Symptomatic();
         var symptomatic = 0;
-        checked
+        foreach (var hediffDef in allDefsListForReading)
         {
-            foreach (var hediffDef in allDefsListForReading)
+            if (comAilDefNames.Contains(hediffDef.defName))
             {
-                if (ComAilDefNames.Contains(hediffDef.defName))
-                {
-                    hediffDef.scenarioCanAdd = Controller.Settings.CACanAddScenario;
-                }
-
-                if (SymptomaticList.Contains(hediffDef.defName))
-                {
-                    ApplySymptoms(hediffDef, typeof(HediffCompProperties_CASymptom),
-                        ref symptomatic);
-                }
+                hediffDef.scenarioCanAdd = Controller.Settings.CACanAddScenario;
             }
 
-            if (symptomatic > 0)
+            if (symptomaticList.Contains(hediffDef.defName))
             {
-                Log.Message("ComAil.Symptomatic".Translate(symptomatic.ToString()));
+                applySymptoms(hediffDef, typeof(HediffCompProperties_CASymptom),
+                    ref symptomatic);
             }
+        }
+
+        if (symptomatic > 0)
+        {
+            Log.Message("ComAil.Symptomatic".Translate(symptomatic.ToString()));
         }
     }
 
-    public static void ApplySymptoms(HediffDef def, Type compType, ref int symptomatic)
+    private static void applySymptoms(HediffDef def, Type compType, ref int symptomatic)
     {
         if (def.HasComp(compType))
         {
             return;
         }
 
-        if (def.comps == null)
-        {
-            def.comps = [];
-        }
+        def.comps ??= [];
 
         def.comps.Add((HediffCompProperties)Activator.CreateInstance(compType));
         symptomatic++;

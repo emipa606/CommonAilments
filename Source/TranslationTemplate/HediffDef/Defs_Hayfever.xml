@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Hayfever -->
+  <CA_Hayfever.label>Hayfever</CA_Hayfever.label>
+  <!-- EN: Hayfever -->
+  <CA_Hayfever.description>Hayfever</CA_Hayfever.description>
+  <!-- EN: mild -->
+  <CA_Hayfever.stages.mild.label>mild</CA_Hayfever.stages.mild.label>
+  <!-- EN: minor -->
+  <CA_Hayfever.stages.minor.label>minor</CA_Hayfever.stages.minor.label>
+  <!-- EN: major -->
+  <CA_Hayfever.stages.major.label>major</CA_Hayfever.stages.major.label>
+</LanguageData>

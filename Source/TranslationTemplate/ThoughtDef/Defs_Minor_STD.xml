@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Minor STD mood -->
+  <CA_Minor_STD_Thought.stages.Minor_STD_mood-0.label>Minor STD mood</CA_Minor_STD_Thought.stages.Minor_STD_mood-0.label>
+  <!-- EN: Lowered mood due to STD. -->
+  <CA_Minor_STD_Thought.stages.Minor_STD_mood-0.description>Lowered mood due to STD.</CA_Minor_STD_Thought.stages.Minor_STD_mood-0.description>
+  <!-- EN: Minor STD mood -->
+  <CA_Minor_STD_Thought.stages.Minor_STD_mood-1.label>Minor STD mood</CA_Minor_STD_Thought.stages.Minor_STD_mood-1.label>
+  <!-- EN: Poor mood due to STD. -->
+  <CA_Minor_STD_Thought.stages.Minor_STD_mood-1.description>Poor mood due to STD.</CA_Minor_STD_Thought.stages.Minor_STD_mood-1.description>
+  <!-- EN: Minor STD mood -->
+  <CA_Minor_STD_Thought.stages.Minor_STD_mood-2.label>Minor STD mood</CA_Minor_STD_Thought.stages.Minor_STD_mood-2.label>
+  <!-- EN: Bad mood due to STD. -->
+  <CA_Minor_STD_Thought.stages.Minor_STD_mood-2.description>Bad mood due to STD.</CA_Minor_STD_Thought.stages.Minor_STD_mood-2.description>
+</LanguageData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Common Cold -->
+  <CA_CommonCold.label>Common Cold</CA_CommonCold.label>
+  <!-- EN: Common Cold -->
+  <CA_CommonCold.description>Common Cold</CA_CommonCold.description>
+  <!-- EN: mild -->
+  <CA_CommonCold.stages.mild.label>mild</CA_CommonCold.stages.mild.label>
+  <!-- EN: minor -->
+  <CA_CommonCold.stages.minor.label>minor</CA_CommonCold.stages.minor.label>
+  <!-- EN: major -->
+  <CA_CommonCold.stages.major.label>major</CA_CommonCold.stages.major.label>
+</LanguageData>

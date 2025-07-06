@@ -15,18 +15,18 @@ public static class ComAil_Setup
 
     private static void ComAil_Setup_Pawns()
     {
-        var Organic = DefDatabase<HediffGiverSetDef>.GetNamed("OrganicStandard");
+        var organic = DefDatabase<HediffGiverSetDef>.GetNamed("OrganicStandard");
         ComAilSetup_Comp(typeof(PawnCAData.CompProperties_PawnCAData), delegate(ThingDef def)
         {
             var race = def.race;
-            if (race == null || !race.Humanlike)
+            if (race is not { Humanlike: true })
             {
                 return false;
             }
 
             var race2 = def.race;
             return race2?.hediffGiverSets != null &&
-                   def.race.hediffGiverSets.Contains(Organic);
+                   def.race.hediffGiverSets.Contains(organic);
         });
     }
 

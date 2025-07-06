@@ -6,7 +6,7 @@ using Verse.AI;
 namespace ComAil;
 
 [HarmonyPatch(typeof(JobDriver_Lovin), "GenerateRandomMinTicksToNextLovin")]
-public class GenerateRandomMinTicksToNextLovin_PostPatch
+public class JobDriver_Lovin_GenerateRandomMinTicksToNextLovin
 {
     [HarmonyPostfix]
     public static void PostFix(ref JobDriver_Lovin __instance, ref TargetIndex ___PartnerInd, Pawn pawn)
@@ -56,7 +56,7 @@ public class GenerateRandomMinTicksToNextLovin_PostPatch
                 }
             }
 
-            if (CommonAilments.CanAddCASTI(CASTIBaseChance, offset, infected))
+            if (CommonAilments.CanAddCasti(CASTIBaseChance, offset, infected))
             {
                 if (std != null)
                 {
@@ -85,7 +85,7 @@ public class GenerateRandomMinTicksToNextLovin_PostPatch
         CommonAilments.TryApplyAilment(hediffdef, severity, sexwith, null, out _);
     }
 
-    public static float GetARnd(float first, float second)
+    private static float GetARnd(float first, float second)
     {
         return Rand.Range(first, second);
     }

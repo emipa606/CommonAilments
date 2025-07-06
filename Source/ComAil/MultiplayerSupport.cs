@@ -8,7 +8,7 @@ namespace ComAil;
 [StaticConstructorOnStartup]
 internal static class MultiplayerSupport
 {
-    private static readonly Harmony harmony = new Harmony("rimworld.pelador.commonailments.multiplayersupport");
+    private static readonly Harmony harmony = new("rimworld.pelador.commonailments.multiplayersupport");
 
     static MultiplayerSupport()
     {
@@ -26,7 +26,7 @@ internal static class MultiplayerSupport
             AccessTools.Method(typeof(CommonAilments), "CanAddCA"),
             AccessTools.Method(typeof(HediffComp_CACure), "SetTicksToCure"),
             AccessTools.Method(typeof(PawnCAData), "PawnCADataTickSet"),
-            AccessTools.Method(typeof(GenerateRandomMinTicksToNextLovin_PostPatch), "GetARnd")
+            AccessTools.Method(typeof(JobDriver_Lovin_GenerateRandomMinTicksToNextLovin), "GetARnd")
         ];
         foreach (var methodInfo in array)
         {

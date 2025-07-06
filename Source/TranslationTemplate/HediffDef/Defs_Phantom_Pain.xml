@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Phantom pain -->
+  <CA_PhantomPain.label>Phantom pain</CA_PhantomPain.label>
+  <!-- EN: Phantom pain -->
+  <CA_PhantomPain.description>Phantom pain</CA_PhantomPain.description>
+  <!-- EN: phantom pain -->
+  <CA_PhantomPain.labelNoun>phantom pain</CA_PhantomPain.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <CA_PhantomPain.labelNounPretty>{0} in the {1}</CA_PhantomPain.labelNounPretty>
+  <!-- EN: Recovering -->
+  <CA_PhantomPain.stages.Recovering.label>Recovering</CA_PhantomPain.stages.Recovering.label>
+</LanguageData>

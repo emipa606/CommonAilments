@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Earache -->
+  <CA_Earache.label>Earache</CA_Earache.label>
+  <!-- EN: Earache -->
+  <CA_Earache.description>Earache</CA_Earache.description>
+  <!-- EN: mild -->
+  <CA_Earache.stages.mild.label>mild</CA_Earache.stages.mild.label>
+  <!-- EN: minor -->
+  <CA_Earache.stages.minor.label>minor</CA_Earache.stages.minor.label>
+  <!-- EN: major -->
+  <CA_Earache.stages.major.label>major</CA_Earache.stages.major.label>
+</LanguageData>

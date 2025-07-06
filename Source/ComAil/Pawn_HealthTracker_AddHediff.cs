@@ -5,9 +5,10 @@ using Verse;
 
 namespace ComAil;
 
-[HarmonyPatch(typeof(Pawn_HealthTracker), "AddHediff", typeof(HediffDef), typeof(BodyPartRecord),
+[HarmonyPatch(typeof(Pawn_HealthTracker), nameof(Pawn_HealthTracker.AddHediff), typeof(HediffDef),
+    typeof(BodyPartRecord),
     typeof(DamageInfo), typeof(DamageWorker.DamageResult))]
-public class AddHediff_PostPatch
+public class Pawn_HealthTracker_AddHediff
 {
     [HarmonyPostfix]
     [HarmonyPriority(0)]
@@ -15,13 +16,13 @@ public class AddHediff_PostPatch
     {
         if (!Controller.Settings.DoAilments || GenDate.DaysPassed < Controller.Settings.CAStartDays ||
             __result == null || Controller.Settings.CAChance <= 0 || ___pawn == null || part == null ||
-            !CommonAilments.PawnCanAcceptCA(___pawn) || def?.addedPartProps is not { solid: true })
+            !CommonAilments.PawnCanAcceptCa(___pawn) || def?.addedPartProps is not { solid: true })
         {
             return;
         }
 
         var offset = CommonAilmentsUtility.AugmentOffset(___pawn);
-        if (!CommonAilments.CanAddCA(Math.Max(12, Controller.Settings.CAChance * 2), offset))
+        if (!CommonAilments.CanAddCa(Math.Max(12, Controller.Settings.CAChance * 2), offset))
         {
             return;
         }
@@ -35,7 +36,7 @@ public class AddHediff_PostPatch
         var sev = CommonAilmentsUtility.RandNum(0.5f, 3f);
         if (CommonAilmentsUtility.HediffEffect(hdef, sev, ___pawn, part, out _))
         {
-            CommonAilments.SendCAMsg(___pawn, hdef);
+            CommonAilments.SendCaMsg(___pawn, hdef);
         }
     }
 }

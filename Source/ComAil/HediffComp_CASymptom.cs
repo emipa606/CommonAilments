@@ -10,7 +10,7 @@ public class HediffComp_CASymptom : HediffComp
 
     public override void CompPostTick(ref float severityAdjustment)
     {
-        if (!Controller.Settings.DoSymptoms || !CommonAilments.PawnCanAcceptCA(Pawn) ||
+        if (!Controller.Settings.DoSymptoms || !CommonAilments.PawnCanAcceptCa(Pawn) ||
             !Controller.Settings.DoAilments || GenDate.DaysPassed < Controller.Settings.CAStartDays ||
             !Pawn.IsHashIntervalTick(2501))
         {
@@ -21,7 +21,7 @@ public class HediffComp_CASymptom : HediffComp
         CommonAilments.CurSituation(Pawn, out var offset, out _, out _, out _, out _,
             out _);
         offset += Math.Max(-20, Math.Min(10, CommonAilments.GetImmunityOS(Pawn)));
-        if (CommonAilments.CanAddCA(chance, offset))
+        if (CommonAilments.CanAddCa(chance, offset))
         {
             CommonAilmentsUtility.ApplySymptom(Pawn);
         }
