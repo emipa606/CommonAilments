@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>インストールされたmod-versionです。{0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>より重い病気には、症状として「一般的な病気」を使用できるようにする。</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Common Ailmentsは{0}の病気に潜在的な症状行動を追加しました。</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

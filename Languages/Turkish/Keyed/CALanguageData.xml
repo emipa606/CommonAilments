@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Yüklü mod sürümü: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Daha ağır hastalıkların semptom olarak Yaygın Hastalıklar'ı kullanmasına izin verin:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Yaygın Hastalıklar {0} hastalığa potansiyel semptomatik davranış ekledi.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Geïnstalleerde mod-versie: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Sta toe dat ernstigere ziekten gewone kwalen als symptomen gebruiken:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Common Ailments voegde potentieel symptomatisch gedrag toe aan {0} kwalen.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

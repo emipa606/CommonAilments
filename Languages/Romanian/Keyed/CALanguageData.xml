@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Versiunea de mod instalată: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Permiteți ca bolile mai grave să folosească bolile comune ca simptome:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Afecțiuni comune a adăugat un potențial comportament simptomatic la {0} maladii.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

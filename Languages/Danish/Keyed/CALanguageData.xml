@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Installerede mod-version: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Tillad mere alvorlige sygdomme at bruge almindelige lidelser som symptomer:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Almindelige lidelser tilføjede potentiel symptomatisk adfærd til {0} sygdomme.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

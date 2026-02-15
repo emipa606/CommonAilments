@@ -20,4 +20,5 @@
   <ComAil.NegHealthSound>在通知信息中使用 "负面健康 "的声音。</ComAil.NegHealthSound>
   <ComAil.CASTIChance>感染性传播疾病的基本几率[默认为10]。</ComAil.CASTIChance>
   <ComAil.Symptomatic>常见疾病为{0}种弊病增加了潜在的对症行为。</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

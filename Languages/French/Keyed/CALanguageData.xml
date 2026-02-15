@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Version installée du module : {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Permettre aux maladies plus graves d'utiliser les maladies courantes comme symptômes :</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Common Ailments a ajouté un comportement symptomatique potentiel à {0} maladies.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

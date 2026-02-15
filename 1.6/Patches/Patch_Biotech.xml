@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/GeneDef[defName="PerfectImmunity"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/GeneDef[defName="PerfectImmunity"]/makeImmuneTo</xpath>
+      <value>
+        <li>CA_Headache</li>
+        <li>CA_Migraine</li>
+        <li>CA_Earache</li>
+        <li>CA_Sinusitis</li>
+        <li>CA_CommonCold</li>
+        <li>CA_SoreThroat</li>
+        <li>CA_SkinRash</li>
+        <li>CA_Conjunctivitis</li>
+        <li>CA_Minor_STD</li>
+        <li>CA_PhantomPain</li>
+        <li>CA_Fatigue</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

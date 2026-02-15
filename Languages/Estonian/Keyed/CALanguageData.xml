@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Installeeritud mod-versioon: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Lubage raskematel haigustel kasutada sümptomitena tavalisi haigusi:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Tavalised tervisehäired lisasid potentsiaalset sümptomaatilist käitumist {0} tervisehäiretele.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

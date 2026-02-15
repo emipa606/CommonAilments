@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Mod-versão instalada: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Permitir que doenças mais graves utilizem as Doenças Comuns como sintomas:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>As doenças comuns acrescentaram um potencial comportamento sintomático aos {0} males.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

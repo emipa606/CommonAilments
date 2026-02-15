@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Zainstalowana wersja moda: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Pozwól, aby poważniejsze choroby używały Wspólnych dolegliwości jako objawów:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Common Ailments dodał potencjalne symptomatyczne zachowanie do {0} maladies.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

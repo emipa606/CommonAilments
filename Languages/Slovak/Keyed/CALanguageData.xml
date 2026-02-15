@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Nainštalovaná verzia módu: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Povoľte závažnejším ochoreniam používať bežné ochorenia ako príznaky:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Spoločné ochorenia pridali potenciálne symptomatické správanie k {0} ochoreniam.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

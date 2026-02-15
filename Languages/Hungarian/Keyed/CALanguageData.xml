@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Telepített mod-verzió: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Engedélyezze, hogy a súlyosabb betegségek tünetként használhassák a Közönséges betegségeket:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Közös betegségek hozzáadták a lehetséges tüneti viselkedést {0} betegséghez.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>

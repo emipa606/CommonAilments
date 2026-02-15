@@ -20,4 +20,5 @@
   <ComAil.CurrentModVersion>Installerad mod-version: {0}</ComAil.CurrentModVersion>
   <ComAil.DoSymptoms>Tillåt allvarligare sjukdomar att använda vanliga sjukdomar som symtom:</ComAil.DoSymptoms>
   <ComAil.Symptomatic>Common Ailments lade till potentiellt symtomatiskt beteende för {0} sjukdomar.</ComAil.Symptomatic>
+  <!--  Initializer -->
 </LanguageData>
