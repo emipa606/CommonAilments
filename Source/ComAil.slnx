@@ -3,4 +3,43 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="ComAil/ComAil.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/">
+    <File Path="../1.7/Defs/Defs_Common_Cold.xml" />
+    <File Path="../1.7/Defs/Defs_Conjunctivitis.xml" />
+    <File Path="../1.7/Defs/Defs_Earache.xml" />
+    <File Path="../1.7/Defs/Defs_Fatigued.xml" />
+    <File Path="../1.7/Defs/Defs_Hayfever.xml" />
+    <File Path="../1.7/Defs/Defs_Headache.xml" />
+    <File Path="../1.7/Defs/Defs_Indigestion.xml" />
+    <File Path="../1.7/Defs/Defs_Knick.xml" />
+    <File Path="../1.7/Defs/Defs_Migraine.xml" />
+    <File Path="../1.7/Defs/Defs_Minor_STD.xml" />
+    <File Path="../1.7/Defs/Defs_Phantom_Pain.xml" />
+    <File Path="../1.7/Defs/Defs_Restless.xml" />
+    <File Path="../1.7/Defs/Defs_Sinusitis.xml" />
+    <File Path="../1.7/Defs/Defs_SkinRash.xml" />
+    <File Path="../1.7/Defs/Defs_SoreThroat.xml" />
+    <File Path="../1.7/Defs/Defs_Sprain.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/Patch_Anomaly.xml" />
+    <File Path="../1.7/Patches/Patch_AY.xml" />
+    <File Path="../1.7/Patches/Patch_Biotech.xml" />
+    <File Path="../1.7/Patches/Patch_DO.xml" />
+    <File Path="../1.7/Patches/Patch_MS.xml" />
+    <File Path="../1.7/Patches/Patch_Orrasons.xml" />
+    <File Path="../1.7/Patches/Patch_RC2.xml" />
+    <File Path="../1.7/Patches/Patch_SS.xml" />
+    <File Path="../1.7/Patches/Patch_Vanilla.xml" />
+    <File Path="../1.7/Patches/Patch_VG.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/CALanguageData.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
 </Solution>

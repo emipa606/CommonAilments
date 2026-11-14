@@ -8,11 +8,10 @@ namespace ComAil;
 [HarmonyPatch(typeof(Pawn_HealthTracker), nameof(Pawn_HealthTracker.AddHediff), typeof(HediffDef),
     typeof(BodyPartRecord),
     typeof(DamageInfo), typeof(DamageWorker.DamageResult))]
-public class Pawn_HealthTracker_AddHediff
+public static class Pawn_HealthTracker_AddHediff
 {
-    [HarmonyPostfix]
     [HarmonyPriority(0)]
-    public static void PostFix(ref Hediff __result, ref Pawn ___pawn, HediffDef def, BodyPartRecord part = null)
+    public static void Postfix(ref Hediff __result, ref Pawn ___pawn, HediffDef def, BodyPartRecord part = null)
     {
         if (!Controller.Settings.DoAilments || GenDate.DaysPassed < Controller.Settings.CAStartDays ||
             __result == null || Controller.Settings.CAChance <= 0 || ___pawn == null || part == null ||

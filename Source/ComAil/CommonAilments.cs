@@ -89,15 +89,12 @@ public class CommonAilments
                     }
                     case 3 when physical:
                     {
-                        if (CanAddCa(CABaseChance, offset))
+                        if (CanAddCa(CABaseChance, offset) && GetBPR(pawn5, out part, out var partdef))
                         {
-                            if (GetBPR(pawn5, out part, out var partdef))
+                            hediffdef = GetBPHed(partdef);
+                            if (part != null)
                             {
-                                hediffdef = GetBPHed(partdef);
-                                if (part != null)
-                                {
-                                    severity = 1f;
-                                }
+                                severity = 1f;
                             }
                         }
 
@@ -114,14 +111,14 @@ public class CommonAilments
                     }
                     case 4:
                     {
-                        if (pawn5.Map != null)
+                        if (pawn5?.Map != null)
                         {
                             var position = pawn5.Position;
                             var terrain = position.GetTerrain(pawn5.Map);
                             var num = terrain != null ? new float?(terrain.fertility) : null;
                             var num2 = 0f;
 
-                            if ((num.GetValueOrDefault() > num2) & (num != null))
+                            if (num.GetValueOrDefault() > num2 && num != null)
                             {
                                 if (planting)
                                 {
@@ -187,15 +184,13 @@ public class CommonAilments
 
                 IL_351:
                 if (hediffdef != null && severity > 0f &&
-                    !TryApplyAilment(hediffdef, severity, pawn5, part, out var imm) && !imm)
+                    !TryApplyAilment(hediffdef, severity, pawn5, part, out var imm) && !imm &&
+                    CanAddCa(CABaseChance * 2, offset))
                 {
-                    if (CanAddCa(CABaseChance * 2, offset))
+                    GetRndAilment(out hediffdef, out severity);
+                    if (hediffdef != null && severity > 0f)
                     {
-                        GetRndAilment(out hediffdef, out severity);
-                        if (hediffdef != null && severity > 0f)
-                        {
-                            TryApplyAilment(hediffdef, severity, pawn5, null, out _);
-                        }
+                        TryApplyAilment(hediffdef, severity, pawn5, null, out _);
                     }
                 }
             }
@@ -628,10 +623,10 @@ public class CommonAilments
 
             if (chkList.Count > 0)
             {
-                for (var i = 0; i < chkList.Count; i++)
+                foreach (var sickListData in chkList)
                 {
-                    var chkhediff = SickListData.GetSLDHD(chkList[i]);
-                    var chkfactor = SickListData.GetSLDF(chkList[i]);
+                    var chkhediff = SickListData.GetSLDHD(sickListData);
+                    var chkfactor = SickListData.GetSLDF(sickListData);
                     if (phedset.GetFirstHediffOfDef(chkhediff) != null)
                     {
                         offset += chkfactor;
@@ -729,12 +724,12 @@ public class CommonAilments
         var needs = pawn?.needs;
         if (needs?.food != null)
         {
-            if (pawn.needs.food.Starving)
+            if (pawn != null && pawn.needs.food.Starving)
             {
                 offset += 2;
             }
 
-            if (pawn.needs.food.CurLevelPercentage > 0.75f)
+            if (pawn != null && pawn.needs.food.CurLevelPercentage > 0.75f)
             {
                 glut = true;
                 offset -= 2;
@@ -742,37 +737,37 @@ public class CommonAilments
         }
 
         rested = false;
-        var needs2 = pawn.needs;
+        var needs2 = pawn?.needs;
         if (needs2?.rest != null)
         {
-            if (pawn.needs.rest.CurLevelPercentage < 0.2f)
+            if (pawn != null && pawn.needs.rest.CurLevelPercentage < 0.2f)
             {
                 offset += 3;
             }
 
-            if (pawn.needs.rest.CurLevelPercentage > 0.75f)
+            if (pawn != null && pawn.needs.rest.CurLevelPercentage > 0.75f)
             {
                 rested = true;
                 offset -= 3;
             }
         }
 
-        var needs3 = pawn.needs;
+        var needs3 = pawn?.needs;
         if (needs3?.outdoors != null)
         {
-            if (pawn.needs.outdoors.CurLevelPercentage < 0.2f)
+            if (pawn != null && pawn.needs.outdoors.CurLevelPercentage < 0.2f)
             {
                 offset += 2;
             }
 
-            if (pawn.needs.outdoors.CurLevelPercentage > 0.75f)
+            if (pawn != null && pawn.needs.outdoors.CurLevelPercentage > 0.75f)
             {
                 offset -= 2;
             }
         }
 
         dirty = false;
-        if (pawn.Map != null && !pawn.IsInAnyStorage())
+        if (pawn?.Map != null && !pawn.IsInAnyStorage())
         {
             if (pawn.Position.GetRoom(pawn.Map).GetStat(RoomStatDefOf.Cleanliness) < 0f)
             {

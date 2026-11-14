@@ -6,7 +6,7 @@ namespace ComAil;
 
 public class HediffComp_CASymptom : HediffComp
 {
-    public HediffCompProperties_CASymptom CAProps => (HediffCompProperties_CASymptom)props;
+    private HediffCompProperties_CASymptom CAProps => (HediffCompProperties_CASymptom)props;
 
     public override void CompPostTick(ref float severityAdjustment)
     {

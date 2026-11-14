@@ -5,7 +5,7 @@ using Verse;
 
 namespace ComAil;
 
-internal class CommonAilmentsUtility
+internal static class CommonAilmentsUtility
 {
     public static List<string> GetComAilDefNames()
     {

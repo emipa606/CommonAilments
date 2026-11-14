@@ -11,11 +11,11 @@ public class Settings : ModSettings
 
     public int CAFrequency = 24;
 
-    public int CAStartDays = 60;
-
     public int CASTIChance = 10;
 
     public int CASTIOffset = -50;
+
+    public int CAStartDays = 60;
 
     public bool DoAilments = true;
 

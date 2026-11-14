@@ -6,10 +6,9 @@ using Verse.AI;
 namespace ComAil;
 
 [HarmonyPatch(typeof(JobDriver_Lovin), "GenerateRandomMinTicksToNextLovin")]
-public class JobDriver_Lovin_GenerateRandomMinTicksToNextLovin
+public static class JobDriver_Lovin_GenerateRandomMinTicksToNextLovin
 {
-    [HarmonyPostfix]
-    public static void PostFix(ref JobDriver_Lovin __instance, ref TargetIndex ___PartnerInd, Pawn pawn)
+    public static void Postfix(ref JobDriver_Lovin __instance, ref TargetIndex ___PartnerInd, Pawn pawn)
     {
         if (!Controller.Settings.DoAilments || !Controller.Settings.DoSTI ||
             GenDate.DaysPassed < Controller.Settings.CAStartDays)

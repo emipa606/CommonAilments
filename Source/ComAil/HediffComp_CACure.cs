@@ -9,9 +9,9 @@ public class HediffComp_CACure : HediffComp
 
     private int ticksToCure;
 
-    public HediffCompProperties_CACure MSProps => (HediffCompProperties_CACure)props;
+    private HediffCompProperties_CACure MSProps => (HediffCompProperties_CACure)props;
 
-    public void SetTicksToCure()
+    private void SetTicksToCure()
     {
         var period = 2500;
         int basehours;
@@ -59,14 +59,7 @@ public class HediffComp_CACure : HediffComp
             return;
         }
 
-        var ImmunitiesAsCure = 0;
-        foreach (var s in Immunities)
-        {
-            if (s != "MSCondom_High")
-            {
-                ImmunitiesAsCure++;
-            }
-        }
+        var ImmunitiesAsCure = Immunities.Count(s => s != "MSCondom_High");
 
         if (ImmunitiesAsCure <= 0)
         {

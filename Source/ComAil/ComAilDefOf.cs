@@ -3,7 +3,7 @@ using Verse;
 
 namespace ComAil;
 
-public class ComAilDefOf
+public static class ComAilDefOf
 {
     static ComAilDefOf()
     {
